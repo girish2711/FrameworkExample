@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Map View Controller-->
+        <scene sceneID="B5z-4n-rJc">
+            <objects>
+                <viewController storyboardIdentifier="BaseMapViewController" id="bjC-sN-tKd" customClass="MyMapViewController" customModule="MyMapsKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OBj-e0-jsF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pz0-1Z-INK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Csh-lK-sx2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5WN-KP-wdU"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5WN-KP-wdU" secondAttribute="trailing" id="Lvf-fy-gyX"/>
+                            <constraint firstItem="5WN-KP-wdU" firstAttribute="leading" secondItem="Csh-lK-sx2" secondAttribute="leading" id="SwJ-mP-5Ik"/>
+                            <constraint firstItem="5WN-KP-wdU" firstAttribute="bottom" secondItem="Pz0-1Z-INK" secondAttribute="top" id="ngs-62-j9e"/>
+                            <constraint firstItem="5WN-KP-wdU" firstAttribute="top" secondItem="Csh-lK-sx2" secondAttribute="top" id="urf-XL-Vdq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="5WN-KP-wdU" id="poA-CR-QTj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdF-hI-jc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="-125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>

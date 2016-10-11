@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationDetailsViewController" customModule="MyMapsKit" customModuleProvider="target">
+            <connections>
+                <outlet property="Distance" destination="nA6-Q3-YGm" id="9P7-Uw-WCi"/>
+                <outlet property="address" destination="8Nn-VU-ifA" id="Cbx-kr-Ug7"/>
+                <outlet property="facilityType" destination="moj-de-tBB" id="IAd-bc-yXX"/>
+                <outlet property="name" destination="GMl-B0-MXl" id="REK-6j-9p4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bether Road" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMl-B0-MXl">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="CQ0-r3-plr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Branch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moj-de-tBB">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.44 M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA6-Q3-YGm">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="bnY-NW-pu2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West Henderson Road" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nn-VU-ifA">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8Nn-VU-ifA" firstAttribute="trailing" secondItem="nA6-Q3-YGm" secondAttribute="trailing" id="7x6-5c-dun"/>
+                <constraint firstItem="GMl-B0-MXl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="183" id="AEC-np-RGo"/>
+                <constraint firstAttribute="trailing" secondItem="GMl-B0-MXl" secondAttribute="trailing" id="FDo-Jq-7d3"/>
+                <constraint firstItem="nA6-Q3-YGm" firstAttribute="trailing" secondItem="moj-de-tBB" secondAttribute="trailing" id="Hdc-zO-56J"/>
+                <constraint firstItem="8Nn-VU-ifA" firstAttribute="leading" secondItem="nA6-Q3-YGm" secondAttribute="leading" id="Ja8-vf-Wea"/>
+                <constraint firstItem="8Nn-VU-ifA" firstAttribute="top" secondItem="nA6-Q3-YGm" secondAttribute="bottom" constant="8" symbolic="YES" id="Jbl-3H-OZK"/>
+                <constraint firstItem="8Nn-VU-ifA" firstAttribute="leading" secondItem="GMl-B0-MXl" secondAttribute="leading" id="Lot-SS-YuG"/>
+                <constraint firstItem="moj-de-tBB" firstAttribute="top" secondItem="GMl-B0-MXl" secondAttribute="bottom" constant="8" symbolic="YES" id="Y2c-Qd-Ims"/>
+                <constraint firstItem="GMl-B0-MXl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e7O-DZ-fbD"/>
+                <constraint firstItem="nA6-Q3-YGm" firstAttribute="top" secondItem="moj-de-tBB" secondAttribute="bottom" constant="8" symbolic="YES" id="eRu-y1-BRb"/>
+                <constraint firstItem="8Nn-VU-ifA" firstAttribute="trailing" secondItem="GMl-B0-MXl" secondAttribute="trailing" id="hez-Um-Geq"/>
+                <constraint firstItem="nA6-Q3-YGm" firstAttribute="leading" secondItem="moj-de-tBB" secondAttribute="leading" id="p3V-15-3Zo"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="162.5"/>
+        </view>
+    </objects>
+</document>
